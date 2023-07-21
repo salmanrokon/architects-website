@@ -5,7 +5,13 @@
     font-family: 'Work Sans', sans-serif;
 }
 .btn-primary{
-    
+    border-radius: 8px;
+    color: #fff;
+    background: #FF900E;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    border-style: none;
+    cursor: pointer;
 }
 /* Header Section style start */
 header{
@@ -55,6 +61,102 @@ nav ul li a{
     color: #727272;
     font-size: 16px;
 }
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
 
 
 /* banner styles end */
+/* Main section styles start */
+main{
+    width: 1440px;
+    margin: 0 auto;
+   
+}
+.features-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.feature-flex{
+    display: flex;
+    align-items: center;
+}
+.features-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.features-main{
+    margin-top: 50px;
+    padding-left: 8px;
+}
+.Quick-list{
+    color: #727272;
+    font-size: 45px;
+    font-weight: 500;
+}
+.of-our{
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+.short-feature{
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+
+/* Main section styles end*/
+
+/* facts section */
+.facts-cart-container{
+    display: flex;
+    justify-content: space-around;
+}
+.facts-cart-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 40px 30px;
+    
+}
+.facts-cart-container .card-title{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+.facts-cart-container .card-stats{
+    font-size: 2.8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* @Media query  */
+@media screen  and (max-width: 576px) {
+    header{
+        padding: 0;
+    }
+    nav{
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    flex-direction: column-reverse;
+}
+.feature-flex{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.features-img-container{
+
+    grid-template-columns: 1fr;
+  
+}
+.features-heading{
+    word-wrap: break-word;
+}
+
+
+}
